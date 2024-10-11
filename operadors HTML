@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicis Operadors</title>
+    <link rel="stylesheet" href="operadors.css">
+</head>
+<body>
+    <h1>Primeros ejercicios DAF</h1>
+    <h2>1.Exercicis Operadors</h2>
+    <h3>1.1.Operadors Aritmètics</h3>
+    <h3>1.2.Operadors Unaris</h3>
+    <script src="operadors.js"></script>
+</body>
+</html>
