@@ -1,0 +1,46 @@
+/* Estilo para h1 */
+h1 {
+    font-family: 'Poppins', sans-serif;  /* Fuente moderna y estilizada */
+    font-size: 3em;                      /* Tamaño grande y destacado */
+    color: #3c6e71;                      /* Color verde suave */
+    text-transform: uppercase;           /* Texto en mayúsculas */
+    letter-spacing: 3px;                 /* Espaciado entre letras */
+    text-align: center;                  /* Centrar el texto */
+    border-bottom: 4px solid #d9d9d9;    /* Línea inferior para resaltar */
+    padding-bottom: 10px;                /* Espaciado inferior */
+    transition: all 0.3s ease-in-out;    /* Transición suave */
+  }
+  
+  h1:hover {
+    color: #284b63;                      /* Cambia de color al pasar el cursor */
+    border-bottom: 4px solid #3c6e71;     /* Color de la línea cambia */
+  }
+  
+  /* Estilo para h2 */
+  h2 {
+    font-family: 'Roboto', sans-serif;   /* Fuente moderna y minimalista */
+    font-size: 2.5em;                    /* Tamaño mediano */
+    color: #ed6a5a;                      /* Color coral vibrante */
+    text-align: left;                    /* Alineado a la izquierda */
+    padding-left: 15px;                  /* Espaciado interno para más estilo */
+    border-left: 5px solid #3c6e71;      /* Barra vertical de color */
+    transition: color 0.3s ease;         /* Transición en el color */
+  }
+  
+  h2:hover {
+    color: #f4a261;                      /* Cambio de color al pasar el cursor */
+  }
+  
+  /* Estilo para h3 */
+  h3 {
+    font-family: 'Open Sans', sans-serif; /* Fuente elegante y profesional */
+    font-size: 2em;                       /* Tamaño más pequeño */
+    color: #353535;                       /* Color gris oscuro */
+    text-align: justify;                  /* Texto justificado */
+    margin-bottom: 10px;                  /* Espaciado inferior */
+    background-color: #f4f4f9;            /* Fondo claro */
+    padding: 10px 20px;                   /* Espaciado interno */
+    border-radius: 8px;                   /* Bordes redondeados */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  }
+  
