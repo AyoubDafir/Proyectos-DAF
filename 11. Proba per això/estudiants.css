@@ -1,0 +1,121 @@
+/* Fitxer CSS estudiants */
+/* Estils generals */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Capçalera */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Secció de menú */
+#menu {
+    background-color: #333;
+    padding: 10px;
+}
+
+#menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#menu ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Secció de contingut */
+#contingut {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+/* Secció de resultats */
+#resultats {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4CAF50;
+    text-align: left;
+}
+
+#resultats p {
+    font-size: 1.5rem;
+    font-weight: bold;
+} 
+
+#resultats br {
+    margin-bottom: 10px; /* Afegir espai entre cada <br> */
+}
+
+/* Estils per al formulari */
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form input[type="file"] {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Enllaços de l'exercici */
+#exercicis {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#exercicis ul {
+    list-style: none;
+    padding: 0;
+}
+
+#exercicis ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#exercicis ul li a {
+    text-decoration: none;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#exercicis ul li a:hover {
+    background-color: #45a049;
+}
+
+
