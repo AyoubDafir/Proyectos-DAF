@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecte de Programació d'Aplicacions a Internet</title>
+    <link rel="stylesheet" href="Primera_part_Projecte.css">
+</head>
+<body>
+    <h1>Primera part Projecte final</h1> 
+    <form action="" id="form" name="Formulari">
+
+        <label for="nomCognoms">Nom i cognoms:</label>
+        <br>
+        <input type="text" id="nomCognoms" name="nomCognoms" placeholder="Escriu Nom i cognoms" onblur="convertirMajuscula(this)" size="45" title="Escriu el nom i cognoms amb la primera lletra de cada paraula en majúscula." required>
+
+        <br><br>
+
+
+        <label for="Edat">Selecciona el rang de la teva edat:</label>
+        <br>
+        <select id="opcions" name="opcions" required>
+            <option value="" disabled>Selecciona una opció</option>
+            <option value="0-17">0-17</option>
+            <option value="18-25">18-25</option>
+            <option value="26-40">26-40</option>
+            <option value="41-55">41-55</option>
+            <option value="56-65">56-65</option>
+            <option value="+65">+65</option>
+        </select>
+        <br><br>
+
+
+        <label for="codiPostal">Codi postal:</label>
+        <br>
+        <input type="text" id="codiPostal" name="codiPostal" placeholder="Escriu el codi postal" pattern="\d{5}" maxlength="5" title="El codi postal ha de tenir exactament 5 dígits" required>
+
+        <br><br>
+
+        <label for="email">Correu electrònic:</label>
+        <br>
+        <input type="text" id="email" name="email" placeholder="Introdueix el correu electrònic"pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$" title="Hi ha d'haver una @ (i tant sols una) i almenys un punt desprès de l'arrova" required>
+
+        <br><br>           
+
+        <label for="contrasenya">Contrasenya:</label>
+        <input type="password" id="contrasenya" name="contrasenya" placeholder="Introdueix la teva contrasenya" 
+        pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d.*\d)(?=.*[!@#$%^&*()_+\[\]{};:\\|,.<>\/?]).{8,}$"
+        title="La contrasenya ha de tenir almenys 8 caràcters, una majúscula, una minúscula, dos dígits i un caràcter especial (!@#$%^&*()_+[]-={};:\|,.>/?)." required>
+        
+        <br>
+
+        <label>
+        <input type="checkbox" id="ocultarContrasenya"> Mostra Contrasenya
+        </label>
+
+        <br><br><br>
+
+        <label for="confirmarContrasenya">Confirmar contrasenya:</label>
+        <input type="password" id="confirmarContrasenya" name="confirmarContrasenya" placeholder="Confirma la teva contrasenya" required>
+        
+        <br>
+
+        <label>
+        <input type="checkbox" id="ocultarConfirmarContrasenya"> Mostra Confirmació
+        </label>
+        <span id="errorMessage" style="color: red; display: none;">Les contrasenyes no coincideixen.</span>
+        <br><br><br>
+
+        <input type="checkbox" id="PoliticaPrivacitat" name="PoliticaPrivacitat" required> 
+        <label for="PoliticaPrivacitat">Accepto els termes de la política de privacitat</label>
+
+        <br><br>
+
+        <button type="reset">Esborrar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
+
+
+<script src="Primera_part_Projecte.css"></script>
+<script src="Primera_part_Projecte.js"></script>
+</body>
+</html>

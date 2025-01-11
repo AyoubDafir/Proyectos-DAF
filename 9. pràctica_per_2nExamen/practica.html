@@ -1,13 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Funcions a JavaScript</title>
+    <title>Exemple DOM</title>
 </head>
 <body>
-    <h1>Funcions a JavaScript</h1>
     <script src="practica.js"></script>
+    <h1 id="titol">Hola, món!</h1>
+    <button id="canviaTitol">Canvia Títol</button>
+<p id="resultats">Text inicial del paràgraf.</p>
+<p><button onClick="canviText();">Canvia Text</button></p>
+    <script>
+        // Accedim a l'element amb id "titol"
+        let titol = document.getElementById("titol");
 
+        // Modifiquem el contingut del títol
+        titol.textContent = "Hola, DOM!";
+
+        // Afegim un esdeveniment al botó
+        let boto = document.getElementById("canviaTitol");
+        boto.addEventListener("click", function () {
+            titol.textContent = "Has canviat el títol!";
+        });
+    </script>
+</body>
+</html>
+ -->
+
+<!-- exercici 1: -->
+
+ <!DOCTYPE html>
+ <html lang="ca">
+ <head>
+     <meta charset="UTF-8">
+     <title>Exercici 1</title>
+ </head>
+ <body>
+     <p id="paragraf">Hola, món!</p>
+     <script>
+        let canvi= document.getElementById("paragraf");
+        canvi.textCount="Canviem";
+     </script>
+ </body>
+ </html>
+
+<!-- exercici 2:  -->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 2</title>
+</head>
+<body>
+    <ul id="llista"></ul>
+    <script>
+        let afegir=document.getElementById("llista");
+        for (let i = 1; i <= 3; i++) {
+            let nouElement = document.createElement("li");
+            nouElement.textContent = "Element " + i;
+            llista.appendChild(nouElement);
+        }
+    </script>
+</body>
+</html>
+
+<!-- exercici 3:  -->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 3</title>
+</head>
+<body>
+    <ul id="llista">
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+    <script>
+        // Solució en JavaScript
+        let llista = document.getElementById("llista");
+        let segonElement = llista.getElementsByTagName("li")[1];
+        llista.removeChild(segonElement);
+    </script>
+</body>
+</html>
+
+<!-- exercici 5: -->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 5</title>
+</head>
+<body>
+    <button id="boto">Fes clic aquí</button>
+    <script>
+        // Solució en JavaScript
+        let boto = document.getElementById("boto");
+        boto.addEventListener("click", function() {
+            alert("Botó clicat!");
+        });
+    </script>
+</body>
+</html>
+
+<!-- exercici 6: -->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 6</title>
+</head>
+<body>
+    <p id="paragraf">Aquest és un paràgraf.</p>
+    <script>
+        let canvi= document.getElementById("paragraf");
+        canvi.style.color="blue";
+    </script>
+</body>
+</html>
+
+<!-- exercici 7: -->
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 7</title>
+    <style>
+        .nou-estil {
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraf">Aquest és un paràgraf.</p>
+    <script>
+        let estil=document.getElementById("paragraf");
+        estil.classList.add("nou-estil");
+    </script>
+</body>
+</html>
+
+<!-- Exercici 9: Canviar el text d'un botó en fer clic -->
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 9</title>
+</head>
+<body>
+    <button id="boto">Fes clic aquí</button>
+    <script>
+        let boton = documentgetElementById("boto");
+        boto.addEventListener("click",function(){
+            boto.textContent="canvi text";
+        })
+    </script>
+</body>
+</html>
+
+exercici 10:
+
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 10</title>
+</head>
+<body>
+    <ul id="llista">
+        <li>Element 1</li>
+        <li>Element 2</li>
+    </ul>
+    <button id="afegir">Afegir Element</button>
+    <button id="eliminar">Eliminar Últim Element</button>
+    <script>
+        let taula = document.getElementById("llista");
+        let botoAfegir = document.getElementById("afegir");
+        let botoEliminar = document.getElementById("eliminar");
+    botoAfegir.addEventListener("click",function(){
+        let nouElement=document.createElement("li");
+        nouElement.textContent = "Nou Element";
+        taula.appendChild(nouElement);
+    })
+    botoEliminar.addEventListener("click",function(){
+        if (taula.lastChild) {
+            taula.removeChild(taula.lastChild);
+        }
+    })
+       
+    </script>
+</body>
+</html> 
+
+exercici 11:
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercici 11</title>
+</head>
+<body>
+    <p id="paragraf">Aquest és un paràgraf que es pot amagar.</p>
+    <button id="mostrar">Mostrar</button>
+    <button id="amagar">Amagar</button>
+    <script>
+        // Solució en JavaScript
+        let paragraf = document.getElementById("paragraf");
+        let botoMostrar = document.getElementById("mostrar");
+        let botoAmagar = document.getElementById("amagar");
+
+        botoAmagar.addEventListener("click", function() {
+            paragraf.style.display = "none";
+        });
+
+        botoMostrar.addEventListener("click", function() {
+            paragraf.style.display = "block";
+        });
+    </script>
 </body>
 </html>
